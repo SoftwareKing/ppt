@@ -1,0 +1,89 @@
+body {
+  background-color: $clr-bg;
+  color: $clr-text;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: $clr-head;
+  text-transform: none;
+}
+
+h1 {
+  color: $clr-primary;
+}
+
+h2 {
+  a {
+    color: $clr-primary;
+  }
+}
+
+a {
+  color: $clr-secondary;
+  text-decoration: none;
+}
+
+li {
+  margin: 1rem 0;
+}
+
+strong {
+  color: $clr-thirdary;
+}
+
+pre.highlight {
+  font-size: 1.5rem;
+}
+
+large {
+  display: inline-block;
+  padding: 3px 12px;
+  font-size: 1.5em;
+  background-color: $clr-secondary;
+  color: $clr-bg;
+  font-weight: bold;
+}
+
+
+
+.center {
+  text-align: center !important;
+}
+
+.lg-mg {
+  margin: 40px 0 !important;
+}
+
+
+
+.secondary {
+  color: $clr-secondary !important;
+}
+
+.thirdary {
+  color: $clr-thirdary !important;
+}
+
+
+
+// text highlighting
+.diff .hljs-deletion, .hljs-string, .hljs-tag .hljs-value, .hljs-preprocessor, .hljs-pragma, .sql .hljs-aggregate, .hljs-javadoc, .smalltalk .hljs-class, .smalltalk .hljs-localvars, .smalltalk .hljs-array, .css .hljs-rules .hljs-value, .hljs-attr_selector, .hljs-pseudo, .apache .hljs-cbracket, .tex .hljs-formula, .coffeescript {
+  color: $clr-primary;
+}
+
+.hljs-built_in, .hljs-attribute, .hljs-keyword {
+  color: $clr-secondary;
+}
+
+.hljs-number, .hljs-date {
+  color: $clr-thirdary;
+}

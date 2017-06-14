@@ -1,0 +1,18 @@
+name: "Slides of xujin"
+
+url: "http://xujin.org/ppt"
+
+timezone: Asia/Shanghai
+
+paginate: 16
+paginate_path: "/page:num"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
+
+permalink: pretty
+
+gems:
+- jekyll-paginate

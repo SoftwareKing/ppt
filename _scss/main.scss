@@ -1,0 +1,15 @@
+$clr-bg:        #2C3E50;
+$clr-bg-light:  lighten($clr-bg, 10%);
+$clr-bg-dark:   darken($clr-bg, 5%);
+
+$clr-primary:   #CDFF5D;
+$clr-secondary: #41D9C5;
+$clr-thirdary:  #FF8BBA;
+
+$clr-text:      #DDD;
+$clr-head:      #FCFCFC;
+
+
+
+@import "text";
+@import "reveal";

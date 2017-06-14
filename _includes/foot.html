@@ -1,0 +1,42 @@
+        <script src="{{ site.url }}/lib/js/head.min.js"></script>
+        <script src="{{ site.url }}/js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: false,
+
+                minScale: 0.4,
+                // Parallax background image
+                // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg', // e.g. "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"
+
+                // // Parallax background size
+                // parallaxBackgroundSize: '2100px 900px', // CSS syntax, e.g. "2100px 900px" - currently only pixels are supported (don't use % or auto)
+
+                // // Number of pixels to move the parallax background per slide
+                // // - Calculated automatically unless specified
+                // // - Set to 0 to disable movement along an axis
+                // parallaxBackgroundHorizontal: 200,
+                // parallaxBackgroundVertical: 50,
+
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: '{{ site.url }}/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: '{{ site.url }}/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '{{ site.url }}/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '{{ site.url }}/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: '{{ site.url }}/plugin/zoom-js/zoom.js', async: true },
+                    { src: '{{ site.url }}/plugin/notes/notes.js', async: true }
+                ]
+            });
+
+        </script>
+    </body>
+</html>

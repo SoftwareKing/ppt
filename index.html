@@ -1,0 +1,19 @@
+---
+layout: normal
+---
+
+<section>
+
+<h2><a href="http://xujin.org" target="_blank">许进</a>的分享幻灯片</h2>
+
+<ul>
+{% for post in site.posts %}
+
+<li>
+{{ post.sharedate }}: <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+</li>
+
+{% endfor %}
+</ul>
+
+</section>
