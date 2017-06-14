@@ -1,5 +1,5 @@
 ---
-title: Spring Cloud Zuul与中间件
+title: 微服务网关中间件
 layout: ppt
 sharedate: 2017.07.28
 fullpage: <svg version="1.1" baseProfile="full" width="400" height="400" xmlns="http://www.w3.org/2000/svg"></svg>
@@ -7,10 +7,10 @@ fullpage: <svg version="1.1" baseProfile="full" width="400" height="400" xmlns="
 
 <section markdown="1" class="home-section">
 
-# Spring Cloud Zuul与中间件
+# 微服务网关中间件
 
 <div class="home-author">
-    <h2 class="subject">Spring Cloud中国社区北京站技术沙龙 北京站分享</h2>
+    <h2 class="subject">Spring Cloud中国社区技术沙龙 北京站分享</h2>
     <div class="author">
         <a href="http://xujin.org" target="_blank">许进(xujin.org)</a>
     </div>
@@ -30,22 +30,25 @@ fullpage: <svg version="1.1" baseProfile="full" width="400" height="400" xmlns="
 
 <div class="center">
     <svg id="owl-svg" version="1.1" baseProfile="full" viewBox="0 0 1088 1088" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 100px; height: 100px; padding: 20px; border-radius: 25px; background-color: #22C3AA"><g transform="translate(80 32)" fill="white"><path id="owl-body" d="M 0 0 L 0 896 A 128 128 0 0 0 128 1024 L 640 1024 A 64 64 0 0 0 704 960 A 64 64 0 0 0 640 896 L 192 896 A 64 64 0 0 1 128 832 L 128 256 L 768 256 L 768 896 A 128 128 0 0 0 896 1024 A 64 64 0 0 0 960 960 A 64 64 0 0 0 896 896 L 896 768 L 896 0 L 768 128 L 640 128 L 128 128 L 0 0 z "></path><path id="owl-left-eye" d="M 256 288 A 64 64 0 0 0 192 352 A 64 64 0 0 0 256 416 A 128 128 0 0 1 384 544 A 128 128 0 0 1 256 672 A 128 128 0 0 1 128 544 A 64 64 0 0 0 64 480 A 64 64 0 0 0 0 544 A 64 64 0 0 0 0 544 A 256 256 0 0 0 256 800 A 256 256 0 0 0 512 544 A 256 256 0 0 0 256 288 z " class="eye"></path><path id="owl-right-eye" d="M 576 352 A 192 192 0 0 0 384 544 A 192 192 0 0 0 576 736 A 64 64 0 0 0 640 672 A 64 64 0 0 0 576 608 A 64 64 0 0 1 512 544 A 64 64 0 0 1 576 480 A 64 64 0 0 1 640 544 A 64 64 0 0 0 704 608 A 64 64 0 0 0 768 544 A 64 64 0 0 0 767.72656 538.54492 A 192 192 0 0 0 576 352 z " class="eye"></path></g></svg>
-    <div><a href="http://xujin.org">xujin.org</a></div>
+    <div><a href="http://xujin.org">网站:xujin.org</a></div>
 </div>
 
 ### 个人经历
 
-2016.4 至今：开源图表库 [ECharts](http://echarts.baidu.com) **@百度**
+[Spring Cloud中国社区创始人](http://springcloud.cn) **@Spring Cloud中国社区**
 
-2009-2016：本科+硕士 **@上海交通大学** 软件学院，数字艺术媒体实验室
+2017.3--至  今：饿了么移动基础架构组 [饿了么](http://ele.me) **@饿了么**
 
-### 技术作品
+2016.07-2017.3 [唯品会](http://www.vip.com) **@唯品会平台架构部**
 
-- [《Three.js 入门指南》](http://www.ituring.com.cn/book/1272)**@图灵社区**
-- [Polyvia](https://github.com/Ovilia/Polyvia)：基于 JavaScript 的 Low-Poly 图像、视频处理算法
-- [jWebAudio](http://01org.github.io/jWebAudio/)：基于 Web Audio 的轻便音频库
+2015.12-2016.7 [唯品会](http://www.vip.com) **@唯品会互联网金融事业部**
 
-*更多作品参见 [github.com/Ovilia](http://github.com/Ovilia)*
+### 项目经验
+
+- [参与唯品会微服务网关Janus的设计与开发](#)
+- [参与唯品会互联网金融平台的设计与开发](https://https://jinrong.vip.com/)
+
+*GitHub [github.com/softwareking](http://github.com/softwareking)*
 
 </section>
 
