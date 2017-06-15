@@ -97,14 +97,28 @@
 <section>
 
 <section>
-    <h2 id="section-4"><a href="#">什么是网关</a></h2>
+    <h2 id="what-is-an-api-gateway">What is an API Gateway?</h2>
 
-    <ul>
-      <li>一个纯 Javascript 的图表库</li>
-      <li>兼容主流浏览器，移动友好</li>
-      <li>底层依赖轻量级的 Canvas 类库 <a href="https://github.com/ecomfe/zrender">ZRender</a></li>
-      <li>提供直观、生动、可交互，可高度个性化定制的<strong>数据可视化图表</strong></li>
-    </ul>
+    <div class="fragment fade-in">
+      <ul>
+        <li>Single entry point for all clients</li>
+      </ul>
+    </div>
+    <div class="fragment fade-in">
+      <ul>
+        <li>Common in microservice architectures <!-- .element: class="fragment" --></li>
+      </ul>
+    </div>
+    <div class="fragment fade-in">
+      <ul>
+        <li>Client insulation from services <!-- .element: class="fragment" --></li>
+      </ul>
+    </div>
+    <div class="fragment fade-in">
+      <ul>
+        <li>Security, surgical routing, Load Shedding, etc… <!-- .element: class="fragment" --></li>
+      </ul>
+    </div>
 
   </section>
 
@@ -112,9 +126,9 @@
 
 <section>
 
-    <h2 id="section-5">测试渲染相关部分</h2>
+    <h2 id="section-4">测试渲染相关部分</h2>
 
-    <h3 id="section-6">目标</h3>
+    <h3 id="section-5">目标</h3>
 
     <div class="fragment fade-in">
       <ul>
@@ -128,7 +142,7 @@
     </div>
 
     <div class="fragment fade-in">
-      <h3 id="section-7">问题</h3>
+      <h3 id="section-6">问题</h3>
       <ul>
         <li>如何描述测试用例的预期表现？</li>
         <li>如何保证版本间渲染效果的一致性？</li>
@@ -152,10 +166,10 @@
 
 <section>
 
-    <h2 id="section-8">当我们谈论前端测试的时候，<br />我们在谈论什么</h2>
+    <h2 id="section-7">当我们谈论前端测试的时候，<br />我们在谈论什么</h2>
 
     <div class="fragment fade-in">
-      <h3 id="section-9">功能测试</h3>
+      <h3 id="section-8">功能测试</h3>
 
       <ul>
         <li>逻辑</li>
@@ -164,7 +178,7 @@
         <li>……</li>
       </ul>
 
-      <h3 id="section-10">性能测试</h3>
+      <h3 id="section-9">性能测试</h3>
 
       <ul>
         <li>时间</li>
@@ -179,7 +193,7 @@
 
 <section>
 
-    <h2 id="section-11">主流前端测试框架</h2>
+    <h2 id="section-10">主流前端测试框架</h2>
 
     <h3 id="qunit"><a href="http://qunitjs.com">QUnit</a></h3>
 
@@ -222,7 +236,7 @@
 
 <section>
 
-    <h2 id="section-12">大同小异的语法</h2>
+    <h2 id="section-11">大同小异的语法</h2>
 
     <div class="highlighter-rouge"><pre class="highlight"><code>// QUnit
 test("pow(2, 2) should return 4", function(){
@@ -261,7 +275,7 @@ describe("pow", function(){
 
 <section>
 
-    <h2 id="section-13">用户界面相关测试</h2>
+    <h2 id="section-12">用户界面相关测试</h2>
 
     <ul>
       <li>按钮在屏幕的显示位置是否正确？</li>
@@ -271,7 +285,7 @@ describe("pow", function(){
     </ul>
 
     <div class="fragment fade-in">
-      <h3 id="section-14">如何自动化测试这些场景？</h3>
+      <h3 id="section-13">如何自动化测试这些场景？</h3>
     </div>
 
   </section>
@@ -308,7 +322,7 @@ describe("pow", function(){
 
 
 <section>
-    <h2 id="section-15">如何自动化测试<strong>渲染</strong>相关部分？</h2>
+    <h2 id="section-14">如何自动化测试<strong>渲染</strong>相关部分？</h2>
 
     <div class="fragment fade-in">
       <h3 id="htmlsvg">HTML、SVG</h3>
@@ -346,7 +360,7 @@ describe("pow", function(){
 
     <h2 id="echarts-">对 ECharts 做测试</h2>
 
-    <h3 id="section-16">渲染无关部分</h3>
+    <h3 id="section-15">渲染无关部分</h3>
 
     <p><strong>Jasmine 单元测试</strong></p>
 
@@ -381,12 +395,12 @@ describe("pow", function(){
 
 <section>
 
-    <h3 id="section-17">渲染相关部分</h3>
+    <h3 id="section-16">渲染相关部分</h3>
 
     <p>例：配置项 <code class="highlighter-rouge">title.text</code> 允许 <code class="highlighter-rouge">\n</code> 表示换行</p>
 
     <div class="fragment fade-in">
-      <h4 id="section-18"><strong>手动测试</strong></h4>
+      <h4 id="section-17"><strong>手动测试</strong></h4>
 
       <ul>
         <li>设置参数</li>
@@ -413,7 +427,7 @@ describe("pow", function(){
 
 <section>
 
-    <h4 id="section-19"><strong>半自动测试</strong></h4>
+    <h4 id="section-18"><strong>半自动测试</strong></h4>
 
     <p>如何测试？</p>
 
@@ -506,7 +520,7 @@ describe("pow", function(){
 
 <section>
 
-    <h2 id="section-20">测试用例 (1)</h2>
+    <h2 id="section-19">测试用例 (1)</h2>
 
     <h3 id="normal">测试标题字重默认值是 <code class="highlighter-rouge">normal</code></h3>
 
@@ -573,7 +587,7 @@ optionCompare(true, testCase.name, testCase.option1, testCase.option2);
 
 
 <section>
-    <h2 id="section-21">用例分析 (1)</h2>
+    <h2 id="section-20">用例分析 (1)</h2>
 
     <div class="fragment fade-in">
       <h3 id="canvas--vs-">比较 Canvas 内容 vs. 操作</h3>
@@ -597,7 +611,7 @@ optionCompare(true, testCase.name, testCase.option1, testCase.option2);
 
 <section>
 
-    <h2 id="section-22">测试用例 (2)</h2>
+    <h2 id="section-21">测试用例 (2)</h2>
 
     <h3 id="oblique--italic1">测试标题样式设为 <code class="highlighter-rouge">oblique</code> 时，没有使用 <code class="highlighter-rouge">italic</code><sup>[1]</sup></h3>
 
@@ -634,9 +648,9 @@ optionCompare(true, testCase.name, testCase.option1, testCase.option2);
 
 
 <section>
-    <h2 id="section-23">用例分析 (2)</h2>
+    <h2 id="section-22">用例分析 (2)</h2>
 
-    <h3 id="section-24">该案例存在的潜在问题</h3>
+    <h3 id="section-23">该案例存在的潜在问题</h3>
 
     <div class="fragment fade-in">
       <p>如果我们希望测试标题样式为 <code class="highlighter-rouge">oblique</code> 时，是否真正设置正确，我们是无从很难判断的。</p>
@@ -668,7 +682,7 @@ optionCompare(true, testCase.name, testCase.option1, testCase.option2);
 
 <section>
 
-    <h2 id="section-25">结论</h2>
+    <h2 id="section-24">结论</h2>
 
     <p>通常比较 Canvas 操作得到的结论更稳健</p>
 
@@ -679,7 +693,7 @@ optionCompare(true, testCase.name, testCase.option1, testCase.option2);
     </div>
 
     <div class="fragment fade-in">
-      <h3 id="section-26">推荐的比较方式</h3>
+      <h3 id="section-25">推荐的比较方式</h3>
       <ul>
         <li>先比较 Canvas 操作</li>
         <li>如果测试失败
@@ -697,10 +711,10 @@ optionCompare(true, testCase.name, testCase.option1, testCase.option2);
 
 <section>
 
-  <h2 id="section-27">前端可视化的测试实践</h2>
+  <h2 id="section-26">前端可视化的测试实践</h2>
 
   <div class="fragment fade-in">
-    <h3 id="section-28">可视化相关测试的思路</h3>
+    <h3 id="section-27">可视化相关测试的思路</h3>
     <ul>
       <li>渲染无关部分做单元测试</li>
       <li>渲染相关部分做 UI 测试
@@ -717,7 +731,7 @@ optionCompare(true, testCase.name, testCase.option1, testCase.option2);
 
 <section>
 
-  <h2 id="section-29">扩展阅读</h2>
+  <h2 id="section-28">扩展阅读</h2>
 
   <ul>
     <li>
@@ -738,7 +752,7 @@ optionCompare(true, testCase.name, testCase.option1, testCase.option2);
 
 <section>
 
-  <h2 id="section-30">感谢聆听</h2>
+  <h2 id="section-29">感谢聆听</h2>
 
   <div class="center">
 
@@ -757,7 +771,7 @@ optionCompare(true, testCase.name, testCase.option1, testCase.option2);
 
 <section>
 
-  <h2 id="section-31">调研问卷</h2>
+  <h2 id="section-30">调研问卷</h2>
 
   <p><img src="http://localhost:4000/img/posts/2016-05-09-visualization-test-02.png" /></p>
 

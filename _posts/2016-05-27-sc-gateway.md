@@ -62,14 +62,20 @@ fullpage: <svg version="1.1" baseProfile="full" width="400" height="400" xmlns="
 <section>
 
 <section markdown="1">
-## [什么是网关](#)
+## What is an API Gateway?
 
-- 一个纯 Javascript 的图表库
-- 兼容主流浏览器，移动友好
-- 底层依赖轻量级的 Canvas 类库 [ZRender](https://github.com/ecomfe/zrender)
-- 提供直观、生动、可交互，可高度个性化定制的**数据可视化图表**
-
-  
+<div class="fragment fade-in" markdown="1">
+* Single entry point for all clients
+</div>
+<div class="fragment fade-in" markdown="1">
+* Common in microservice architectures <!-- .element: class="fragment" -->
+</div>
+<div class="fragment fade-in" markdown="1">
+* Client insulation from services <!-- .element: class="fragment" -->
+</div>
+<div class="fragment fade-in" markdown="1">
+* Security, surgical routing, Load Shedding, etc... <!-- .element: class="fragment" -->
+</div>
 
 </section>
 
